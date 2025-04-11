@@ -17,7 +17,7 @@ VITE_DROP_CONSOLE=true
 VITE_SOURCEMAP=false
 
 # 输出路径
-VITE_OUT_DIR=dist-pro
+VITE_OUT_DIR=docs
 
 # 标题
 VITE_APP_TITLE=UGREEN 管理后台
