@@ -10,18 +10,36 @@
           <ElInput v-model="faq.question" />
         </ElFormItem>
         <ElFormItem :label="'faq回答_' + (index + 1)">
-          <editor
+          <Editor
             api-key="agu9w7x5nhyyidzgqwlw246uf464zj6alt750mifdn5f4xaj"
             :init="{
               height: 200,
               width: 400,
               menubar: false,
               plugins: [
-                'advlist autolink lists link image charmap print preview anchor',
-                'searchreplace visualblocks code fullscreen',
-                'insertdatetime media table paste code help wordcount'
+                'advlist',
+                'autolink',
+                'lists',
+                'link',
+                'image',
+                'charmap',
+                'preview',
+                'anchor',
+                'searchreplace',
+                'visualblocks',
+                'code',
+                'fullscreen',
+                'insertdatetime',
+                'media',
+                'table',
+                'paste',
+                'help',
+                'wordcount'
               ],
-              toolbar: `undo redo | bold | help | link`
+              toolbar: 'undo redo | bold | link | help',
+              link_default_target: '_blank',
+              link_title: false,
+              link_quicklink: true,
             }"
             v-model="faq.answer"
           />
